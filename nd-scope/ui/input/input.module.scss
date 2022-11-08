@@ -1,0 +1,38 @@
+.inputContainer {
+  height: 56px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  position: relative;
+  .button {
+    position: absolute;
+    width: 103px;
+    height: 40px;
+    right: 8px;
+    top: 8px;
+    width: 30%;
+  }
+  .inputText {
+    border: none;
+    background-color: var(--bit-bg-dent, #f6f6f6) !important;
+    color: var(--bit-text-color-heavy, #2b2b2b);
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    &.error {
+      border: var(--bit-error-color, #e62e5c) 1px solid;
+      background-color: var(--bit-error-color, #e62e5c);
+    }
+    &:focus,
+    &:active,
+    &:hover {
+      border: var(--bit-accent-color, #6c5ce7) 1px solid;
+    }
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+}
